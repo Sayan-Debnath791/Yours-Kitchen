@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yours Kitchen/About</title>
+    <link rel="stylesheet" href="CSS/constant.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      .logo {
+    margin-right: 12px;
+    border-radius: 100%;
+}
+
+.navbar-brand h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #27a844;
+}
+
+.nav-link:hover {
+    color: #27a844 !important;
+}
+
+.searchbutton {
+    border-radius: 0px 50px 50px 0px !important;
+}
+
+.searchbar {
+    border-radius: 50px 0px 0px 50px !important;
+    border-color: #27a844 !important;
+    width: 356px !important;
+}
+
+#button1 {
+    margin-top: 6px;
+    margin-right: 3px;
+    padding: 7px 33px;
+    border-radius: 50px 0px 0px 50px;
+    font-weight: 600;
+}
+
+#button2 {
+    margin-top: 6px;
+    margin-right: 25px;
+    padding: 7px 30px;
+    border-radius: 0px 50px 50px 0px;
+    font-weight: 600;
+}
+
+#pp {
+    margin-right: 9px;
+    border-radius: 100%;
+    border: 2px solid #27a844;
+}
+
+.profile {
+    display: none;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+.fa-brands {
+    color: #000;
+}
+
+.box {
+    background-color: #27a844;
+    height: 0.3vh;
+    width: 0vw;
+    animation: loading 2s ease-in-out 0s 1 normal;
+}
+
+@keyframes loading {
+    0% {
+        width: 1vw;
+    }
+
+    60% {
+        width: 40vw;
+    }
+
+    70% {
+        width: 60vw;
+    }
+
+    80% {
+        width: 80vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .searchbar {
+        width: 285px !important;
+        margin: 12px 0px 28px 12px;
+    }
+
+    .searchbutton {
+        margin: 12px 0px 28px 0px;
+    }
+
+    #button1 {
+        border-radius: 50px;
+        margin: 5px 5px;
+        width: 90vw;
+    }
+
+    #button2 {
+        border-radius: 50px;
+        margin: 5px 5px;
+        width: 90vw;
+    }
+
+    #pp {
+        margin-right: 9px;
+        margin-top: 24px;
+    }
+
+    .profile {
+        display: inline;
+        margin-right: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+    }
+
+    .lcs span {
+        display: inline-block;
+    }
+}
+.about-img {
+    height: 470px !important;
+    width: 90vw;
+    border-radius: 40px;
+}
+
+.count {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+#number-counts {
+    color: #27a844 !important;
+}
+
+.about-head {
+    color: #27a844;
+    font-weight: 600;
+    margin: 0px 60px !important;
+}
+
+.about-text {
+    font-size: 21px;
+    margin: 0px 60px !important;
+}
+
+.about-text span {
+    color: #27a844;
+}
+
+@media screen and (max-width:1000px) {
+    .about-head {
+        color: #27a844;
+        font-weight: 600;
+        margin: 0px 5px !important;
+    }
+    
+
+    .about-text{
+        margin: 0px 5px !important;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-down">
+        <div class="container-fluid">
+            <img src="img/logo.png" width="60" height="55" class="d-inline-block align-top logo" alt="...">
+            <a class="navbar-brand" href="#">
+                <h3>Yours Kitchen</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="share.html">Share a
+                            recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html#recipes">Latest recipes</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link active" aria-current="page" href="home.html#story">Stories</a>
+                    </li>
+                </ul>
+                <form class="d-flex search">
+                    <input class="form-control searchbar" type="search" placeholder="Search recipes..."
+                        aria-label="Search">
+                    <button class="btn btn-success searchbutton" type="submit"> <i class="fa fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ms-auto ">
+                    <button type="button" id="button1" class="btn mb-2 btn-outline-success btn-round"><i
+                            class="fa-solid fa-address-card"></i> About Us
+                    </button>
+                    <button type="button" id="button2" class="btn mb-2 btn-success btn-round"><i
+                            class="fa-regular fa-bookmark">
+                        </i> Saved Recipe
+                    </button>
+                </ul>
+                <center>
+                    <a href="">
+                        <img id="pp" src="img/Profile_photo.webp" alt="..." height="45px" width="45px">
+                    </a>
+                    <p class="profile"><br>Profile</p>
+                </center>
+            </div>
+        </div>
+    </nav>
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img/bg-about.jpg" alt="About Us" class="img-fluid about-img">
+                </div>
+                <div id="number-counts" class=" text-white" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-4 mt-5 mb-5">
+                                <h3 class="count" data-count="25400">25100</h3>
+                                <h5>Recipes</h5>
+                            </div>
+                            <div class="col-md-4 mt-5 mb-5">
+                                <h3 class="count" data-count="3800">3500</h3>
+                                <h5>Users</h5>
+                            </div>
+                            <div class="col-md-4 mt-5 mb-5">
+                                <h3 class="count" data-count="330">30</h3>
+                                <h5>Types Of Recipes</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" data-aos="fade-left" data-aos-duration="1000">
+                    <br>
+                    <h1 class="about-head pb-3" data-aos="fade-down" data-aos-duration="1000">About Us</h1>
+                    <p class="about-text text-justify">
+
+                        Welcome to <span> Yours Kitchen</span>, the go-to platform for food
+                        lovers and
+                        culinary creators! We’re excited to offer a space where anyone can upload their favorite
+                        recipes, and where food enthusiasts can explore, engage with, and share an array of delicious
+                        dishes. <br class="mb-3">
+
+                        At <span> Yours Kitchen</span>, we believe that food is a universal language and a way to
+                        connect with
+                        others. Our platform makes it easy for you to share your recipes with a global audience. Simply
+                        upload your recipe, complete with detailed instructions and enticing photos, and start
+                        connecting with fellow food lovers. <br class="mb-3">
+
+                        But it doesn’t stop there. We value and reward your creativity. As your recipes receive likes,
+                        comments, and shares, you’ll have the opportunity to earn money through our revenue-sharing
+                        program. It’s a win-win: you get to showcase your culinary skills and make a little extra while
+                        doing what you love. <br class="mb-3">
+
+                        For those who love discovering new recipes, <span> Yours Kitchen</span> is your perfect culinary
+                        playground. Browse through a wide variety of recipes, from everyday meals to gourmet creations,
+                        and engage with content by liking, commenting, and sharing posts with your friends and family.
+                        <br class="mb-3">
+
+                        Our mission is to create a vibrant community where both recipe creators and enthusiasts can
+                        thrive. Whether you’re here to share your culinary creations or find inspiration for your next
+                        meal, we’re thrilled to have you join us.<br class="mb-3">
+
+                        Experience the joy of cooking and sharing with <span> Yours Kitchen</span>—where every recipe is
+                        a new
+                        adventure and every cook is celebrated.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light text-center py-4" id="contact">
+        <p>Get Our App on:
+            <a href="#"><i class="fa-brands fa-google-play"></i></a> |
+            <a href="#"><i class="fa-brands fa-app-store"></i></a>
+        </p>
+        <p>Follow Us on:
+            <a href="#"><i class="fa-brands fa-facebook"></i></a> |
+            <a href="#"><i class="fa-brands fa-instagram"></i></a> |
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </p>
+        <p><i class="fas fa-envelope"></i> yourskitchencontact@gmail.com | <i class="fas fa-phone"></i> +91 62901 45203
+        </p>
+        <hr>
+        <p>&copy; 2024 Yours Kitchen. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+<script>
+    const counters = document.querySelectorAll('.count');
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-count');
+            const count = +counter.innerText;
+            const speed = 5000000;
+
+            const increment = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 0.1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCount();
+    });
+   
+    AOS.init();
+</script>
+
+</html>
