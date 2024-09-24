@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yours Kitchen</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/constant.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="box"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-down">
+        <div class="container-fluid">
+            <a href="img/logo.png"><img src="img/logo.png" width="60" height="55" class="d-inline-block align-top logo"
+                    alt="..."></a>
+            <a class="navbar-brand" href="#">
+                <h3>Yours Kitchen</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="share.html">Share a
+                            recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#recipes">Latest recipes</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link active" aria-current="page" href="#story">Stories</a>
+                    </li>
+                </ul>
+                <form class="d-flex search">
+                    <input class="form-control searchbar" type="search" placeholder="Search recipes..."
+                        aria-label="Search">
+                    <button class="btn btn-success searchbutton" type="submit"> <i class="fa fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ms-auto ">
+                    <a href="about.html">
+                        <button type="button" id="button1" class="btn mb-2 btn-outline-success btn-round"><i
+                                class="fa-solid fa-address-card"></i> About Us
+                        </button>
+                    </a>
+                    <a href="">
+                        <button type="button" id="button2" class="btn mb-2 btn-success btn-round"><i
+                                class="fa-regular fa-bookmark">
+                            </i> Saved Recipe
+                        </button>
+                    </a>
+                </ul>
+                <center>
+                    <a href="img/Profile_photo.webp">
+                        <img id="pp" src="img/Profile_photo.webp" alt="..." height="45px" width="45px">
+                    </a>
+                    <p class="profile"><br>Profile</p>
+                </center>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4" id="story">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Stories</h2>
+                <div class="d-flex overflow-auto stories">
+                    <div class=" mx-2">
+                        <img src="img/add_story.jpeg" class="rounded-circle" alt="Story" width="100" height="100">
+                        <p class="text-center mt-2">Add Yours</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-1.jpg"><img src="img/story-1.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Sayan</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-2.jpg"><img src="img/story-2.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Antika</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-3.jpg"><img src="img/story-3.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Dev</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-4.jpg"><img src="img/story-4.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Anuradha</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-5.jpg"><img src="img/story-5.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Riya</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-6.jpg"><img src="img/story-6.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Neha</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-7.jpg"><img src="img/story-7.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Binoy</p>
+                    </div>
+                    <div class="story-box mx-2 stories">
+                        <a href="img/story-8.jpg"><img src="img/story-8.jpg" class="rounded-circle" alt="Story"
+                                width="100" height="100"></a>
+                        <p class="text-center mt-2">Mridul</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <a href="share.html">
+            <button id="writerecipes">
+                <p>Write some recipes here...</p>
+            </button>
+        </a>
+    </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown item-filter">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        TYPE OF DISH
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Starter</a></li>
+                        <li><a class="dropdown-item" href="#">Main</a></li>
+                        <li><a class="dropdown-item" href="#">Desserts</a></li>
+                        <li><a class="dropdown-item" href="#">Snacks</a></li>
+                        <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="#">Drink</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown item-filter">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        DIET
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Vegeterian</a></li>
+                        <li><a class="dropdown-item" href="#">Vegan</a></li>
+                        <li><a class="dropdown-item" href="#">Sugar-Free</a></li>
+                        <li><a class="dropdown-item" href="#">Lactose-Free</a></li>
+                        <li><a class="dropdown-item" href="#">Gluten-Free</a></li>
+                        <li><a class="dropdown-item" href="#">Alcohol-Free</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown item-filter">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        PREPARATION TIME
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Under 20 min.</a></li>
+                        <li><a class="dropdown-item" href="#">Under 40 min.</a></li>
+                        <li><a class="dropdown-item" href="#">Under 60 min.</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown item-filter">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        MAIN INGREDIENTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Chicken</a></li>
+                        <li><a class="dropdown-item" href="#">Mutton</a></li>
+                        <li><a class="dropdown-item" href="#">Beef</a></li>
+                        <li><a class="dropdown-item" href="#">Pork</a></li>
+                        <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                        <li><a class="dropdown-item" href="#">Seafood</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown item-filter">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        CUISINE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Indian</a></li>
+                        <li><a class="dropdown-item" href="#">Chinese</a></li>
+                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                        <li><a class="dropdown-item" href="#">Spanish</a></li>
+                        <li><a class="dropdown-item" href="#">Middle East</a></li>
+                        <li><a class="dropdown-item" href="#">British</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container my-4" id="recipes">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Latest Recipe Posts</h2>
+                <div class="posts">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <a href="img/user-1.jpg">
+                                <img class="mb-3 me-2  mt-2 rounded-circle" src="img/user-1.jpg" alt="..." height="40px"
+                                    width="40px"></a>
+                            <span class="username">Nayana Das • <span><a href="#">Follow</a></span></span>
+                            <h5 class="card-title">DAK BUNGALOW CHICKEN </h5>
+                            <iframe class="mt-2 mb-2" width="100%" height="500"
+                                src="https://www.youtube.com/embed/asCIuHrEH-o?si=zsg36yBnhE733nZm"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="card-text">ANGLO-INDIAN CHICKEN RECIPE || DURGAPUJA SPECIAL RECIPE
+                                <br><br> Follow me for more recipes....
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div class="lcs">
+                                    <span><i class="fa-regular fa-heart"></i> 843 Likes </span>
+                                    <span><i class="fa-regular fa-comment"></i> 38 Comments </span>
+                                    <span><i class="fa fa-share"></i> 23 Shares </span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="lcs">
+                                        <span><i class="fa fa-eye"></i> 1.2k Views </span>
+                                        <span><i class="fa-regular fa-bookmark"></i> Save</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <div class="card mb-4">
+                            <div class="card-body photo-text-format">
+                                <a href="img/user-2.jpg">
+                                    <img class="mb-3 me-2 mt-2 rounded-circle" src="img/user-2.jpg" alt="..."
+                                        height="40px" width="40px"></a>
+                                <span class="username">Ananya Banerjee • <span><a href="#">Follow</a></span></span>
+                                <h5 class="card-title mb-1">Mango ice cream recipe </h5>
+                                <a href="img/post-2a.jpg"><img class="post-img" src="img/post-2a.jpg" alt=""></a>
+                                <a href="img/post-2b.jpg"><img class="post-img" src="img/post-2b.jpg" alt=""></a>
+                                <p class="card-text mt-2">Ingredients:
+                                    - 2 large ripe mangoes (or 1 ½ cups mango puree)
+                                    - 1 can (14 oz) sweetened condensed milk
+                                    - 2 cups heavy cream (chilled)
+                                    - 1 tsp vanilla extract (optional)
+                                    - A pinch of salt (optional, to enhance the flavor) <br><br>
+
+                                    Instructions: <br>
+
+                                    1. Prepare the mango puree:
+                                    - Peel and chop the ripe mangoes. Blend the mango chunks into a smooth puree using a
+                                    blender or food processor. Set aside. <br>
+
+                                    2. Whip the cream:
+                                    - In a large bowl, whip the chilled heavy cream using a hand mixer or whisk until
+                                    soft peaks form. This should take about 3-5 minutes. Make sure not to over-whip.
+                                    <br>
+
+                                    3. Combine the ingredients:
+                                    - Gently fold in the sweetened condensed milk, vanilla extract (if using), and mango
+                                    puree into the whipped cream. Stir until well combined, but don’t over-mix to keep
+                                    the light and airy texture. <br>
+
+                                    4. Freeze:
+                                    - Pour the mixture into an airtight container. Cover it with plastic wrap or a lid.
+                                    - Freeze for at least 6 hours or overnight until firm. <br>
+
+                                    5. Serve:
+                                    - Once the ice cream is fully set, scoop and serve your creamy mango ice cream! <br>
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="lcs">
+                                        <span><i class="fa-regular fa-heart"></i> 465 Likes </span>
+                                        <span><i class="fa-regular fa-comment"></i> 24 Comments </span>
+                                        <span><i class="fa fa-share"></i> 22 Shares </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="lcs">
+                                            <span><i class="fa fa-eye"></i> 943 Views </span>
+                                            <span><i class="fa-regular fa-bookmark"></i> Save</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <a href="img/user-3.webp">
+                                    <img class="mb-3 me-2 mt-2 rounded-circle" src="img/user-3.webp" alt="..."
+                                        height="40px" width="40px"></a>
+                                <span class="username">Beauty Kumar • <span><a href="#">Follow</a></span></span>
+                                <h5 class="card-title">Delicious Chocolate Cake</h5>
+                                <iframe class="mt-2 mb-2" width="100%" height="450"
+                                    src="https://www.youtube.com/embed/GLGluwkm7M0?si=5onvr5S_LT1Svz5c"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="card-text">Oreo dessert in 5 minutes! Only 3 ingredients! No baking and no
+                                    gelatin!
+                                    <br> <br> Very tasty and also without baking! Creamy dessert is easy and delicious!
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="lcs">
+                                        <span><i class="fa-regular fa-heart"></i> 197 Likes </span>
+                                        <span><i class="fa-regular fa-comment"></i> 83 Comments </span>
+                                        <span><i class="fa fa-share"></i> 35 Shares </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="lcs">
+                                            <span><i class="fa fa-eye"></i> 436 Views </span>
+                                            <span><i class="fa-regular fa-bookmark"></i> Save</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts"></div>
+                    <div class="card mb-4">
+                        <div class="card-body photo-text-format">
+                            <a href="img/user-4.jpg">
+                                <img class="mb-3 me-2 mt-2 rounded-circle" src="img/user-4.jpg" alt="..." height="40px"
+                                    width="40px"></a>
+                            <span class="username">Sathi Mondal • <span><a href="#">Follow</a></span></span>
+                            <h5 class="card-title">Best Burger Recipe</h5>
+                            <a href="img/post-4b.jpg"><img class="post-img " src="img/post-4b.jpg" alt=""></a>
+                            <a href="img/post-4a.jpg"><img class="post-img " src="img/post-4a.jpg" alt=""></a>
+                            <p class="card-text">Just like a regular beef burger, you don’t want to over-complicate a
+                                turkey burger. This recipe will show you how to make the best turkey burgers, one that
+                                you may even prefer to the usual beef variety! <br><br>
+                                Ingredients in Turkey Burgers<br>
+                                Lean ground – This is where it all begins in making those turkey burgers.<br>
+                                Medium onion – Grating it distributes that onion juice and keeps big chunks from messing
+                                up the texture.<br>
+                                Worcestershire sauce – This will add more of a beefy flavor to your turkey patty recipe
+                                so no one will realize you’re using turkey instead of beef. It also helps ensure you end
+                                up with juicy turkey burgers.<br>
+                                Mayonnaise – Unites your turkey together while adding moisture.<br>
+                                Ketchup – Like the mayo, but with a richer flavor to mimic the taste of beef.<br>
+                                Salt and pepper – The only turkey burger seasoning you’ll need. Add to your preference.
+                                <br>
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div class="lcs">
+                                    <span><i class="fa-regular fa-heart"></i> 245 Likes </span>
+                                    <span><i class="fa-regular fa-comment"></i> 12 Comments </span>
+                                    <span><i class="fa fa-share"></i> 11 Shares </span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="lcs">
+                                        <span><i class="fa fa-eye"></i> 678 Views </span>
+                                        <span><i class="fa-regular fa-bookmark"></i> Save</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div aria-label="Page example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4" id="contact">
+        <p>Get Our App on:
+            <a href="#"><i class="fa-brands fa-google-play"></i></a> |
+            <a href="#"><i class="fa-brands fa-app-store"></i></a>
+        </p>
+        <p>Follow Us on:
+            <a href="#"><i class="fa-brands fa-facebook"></i></a> |
+            <a href="#"><i class="fa-brands fa-instagram"></i></a> |
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </p>
+        <p><i class="fas fa-envelope"></i> yourskitchencontact@gmail.com | <i class="fas fa-phone"></i> +91 62901
+            45203
+        </p>
+        <hr>
+        <p>&copy; 2024 Yours Kitchen. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
