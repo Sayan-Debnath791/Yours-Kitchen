@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yours Kitchen/Share</title>
+    <link rel="stylesheet" href="CSS/constant.css">
+    <link rel="stylesheet" href="CSS/share.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+.logo {
+    margin-right: 12px;
+    border-radius: 100%;
+}
+
+.navbar-brand h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #27a844;
+}
+
+.nav-link:hover {
+    color: #27a844 !important;
+}
+
+.searchbutton {
+    border-radius: 0px 50px 50px 0px !important;
+}
+
+.searchbar {
+    border-radius: 50px 0px 0px 50px !important;
+    border-color: #27a844 !important;
+    width: 356px !important;
+}
+
+#button1 {
+    margin-top: 6px;
+    margin-right: 3px;
+    padding: 7px 33px;
+    border-radius: 50px 0px 0px 50px;
+    font-weight: 600;
+}
+
+#button2 {
+    margin-top: 6px;
+    margin-right: 25px;
+    padding: 7px 30px;
+    border-radius: 0px 50px 50px 0px;
+    font-weight: 600;
+}
+
+#pp {
+    margin-right: 9px;
+    border-radius: 100%;
+    border: 2px solid #27a844;
+}
+
+.profile {
+    display: none;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+.fa-brands {
+    color: #000;
+}
+
+.box {
+    background-color: #27a844;
+    height: 0.3vh;
+    width: 0vw;
+    animation: loading 2s ease-in-out 0s 1 normal;
+}
+
+@keyframes loading {
+    0% {
+        width: 1vw;
+    }
+
+    60% {
+        width: 40vw;
+    }
+
+    70% {
+        width: 60vw;
+    }
+
+    80% {
+        width: 80vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .searchbar {
+        width: 285px !important;
+        margin: 12px 0px 28px 12px;
+    }
+
+    .searchbutton {
+        margin: 12px 0px 28px 0px;
+    }
+
+    #button1 {
+        border-radius: 50px;
+        margin: 5px 5px;
+        width: 90vw;
+    }
+
+    #button2 {
+        border-radius: 50px;
+        margin: 5px 5px;
+        width: 90vw;
+    }
+
+    #pp {
+        margin-right: 9px;
+        margin-top: 24px;
+    }
+
+    .profile {
+        display: inline;
+        margin-right: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+    }
+
+    .lcs span {
+        display: inline-block;
+    }
+}
+.share-head {
+    color: #27a844;
+    font-weight: 600;
+}
+
+.share-btn{
+    width: 20vw !important;
+    
+}
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-down">
+        <div class="container-fluid">
+            <img src="img/logo.png" width="60" height="55" class="d-inline-block align-top logo" alt="...">
+            <a class="navbar-brand" href="#">
+                <h3>Yours Kitchen</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="">Share a recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html#recipes">Latest recipes</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link active" aria-current="page" href="home.html#story">Stories</a>
+                    </li>
+                </ul>
+                <form class="d-flex search">
+                    <input class="form-control searchbar" type="search" placeholder="Search recipes..."
+                        aria-label="Search">
+                    <button class="btn btn-success searchbutton" type="submit"> <i class="fa fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ms-auto ">
+                    <a href="about.html">
+                        <button type="button" id="button1" class="btn mb-2 btn-outline-success btn-round"><i
+                                class="fa-solid fa-address-card"></i> About Us
+                        </button>
+                    </a>
+                    <button type="button" id="button2" class="btn mb-2 btn-success btn-round"><i
+                            class="fa-regular fa-bookmark">
+                        </i> Saved Recipe
+                    </button>
+                </ul>
+                <center>
+                    <a href="">
+                        <img id="pp" src="img/Profile_photo.webp" alt="..." height="45px" width="45px">
+                    </a>
+                    <p class="profile"><br>Profile</p>
+                </center>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-4" id="sharerecipes">
+
+        <div class="col-12">
+            <h2 class="mb-4 share-head">Share Your Recipe With Us...</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="recipeTitle" class="form-label">Recipe Title</label>
+                    <input type="text" class="form-control" id="recipeTitle" placeholder="Enter recipe title">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>TYPE OF DISH</option>
+                            <option value="1">Starter</option>
+                            <option value="2">Main</option>
+                            <option value="3">Desserts</option>
+                            <option value="4">Snacks</option>
+                            <option value="5">Breakfast</option>
+                            <option value="6">Drink</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>CUISINE</option>
+                            <option value="1">Indian</option>
+                            <option value="2">Chinese</option>
+                            <option value="3">Italian</option>
+                            <option value="4">Spanish</option>
+                            <option value="5">Middle East</option>
+                            <option value="6">British</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected> DIET</option>
+                            <option value="1">Vegeterian</option>
+                            <option value="2">Vegan</option>
+                            <option value="3">Sugar-Free</option>
+                            <option value="4">Lactose-Free</option>
+                            <option value="5">Gluten-Free</option>
+                            <option value="6">Alcohol-Free</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>PREPARATION TIME</option>
+                            <option value="1">Under 20 min.</option>
+                            <option value="2">Under 40 min.</option>
+                            <option value="3">Under 60 min.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>MAIN INGREDIENTS</option>
+                            <option value="1">Chicken</option>
+                            <option value="2">Mutton</option>
+                            <option value="3">Beef</option>
+                            <option value="4">Pork</option>
+                            <option value="5">Vegetables</option>
+                            <option value="6">Seafood</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="recipeDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="recipeDescription" rows="5"
+                            placeholder="Describe your recipe"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipeVideoPhoto" class="form-label">Upload Recipe Photo/Video</label>
+                        <input type="file" class="form-control" id="recipeVideoPhoto">
+                    </div>
+                    <center>
+                        <button type="submit" class="share-btn btn btn-success rounded-pill mt-3 pt-2 pb-2"><b>Post
+                                Recipe</b></button>
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer class="bg-light text-center py-4">
+        <p>Get Our App on:
+            <a href="#"><i class="fa-brands fa-google-play"></i></a> |
+            <a href="#"><i class="fa-brands fa-app-store"></i></a>
+        </p>
+        <p>Follow Us on:
+            <a href="#"><i class="fa-brands fa-facebook"></i></a> |
+            <a href="#"><i class="fa-brands fa-instagram"></i></a> |
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </p>
+        <p><i class="fas fa-envelope"></i> yourskitchencontact@gmail.com | <i class="fas fa-phone"></i> +91 62901 45203
+        </p>
+        <hr>
+        <p>&copy; 2024 Yours Kitchen. All Rights Reserved.</p>
+    </footer>
+</body>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
